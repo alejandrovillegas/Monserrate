@@ -1,8 +1,11 @@
 from django.db import models
+from Proyecto.models import project
+
 
 # Create your models here.
-class apartmento(models.Model):
-	apto = models.CharField(max_lenth=255)
-	piso = models.CharField(max_lenth=255)
-	Venta = models.BooleanField()
-	mtrs = models.PositiveIntergerField()
+class apartment(models.Model):
+	id_p = models.ForeignKey(project) 
+	apto=models.PositiveIntegerField()
+	piso=models.CharField(max_length=255)
+	Venta=models.BooleanField()
+	mtrs=models.PositiveIntegerField()

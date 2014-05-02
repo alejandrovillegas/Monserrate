@@ -39,6 +39,9 @@ INSTALLED_APPS = (
     'Proyecto',
     'Apartamento',
     'visitantes',
+    'Comprador',
+    'Compapt',
+    
 
     
 
